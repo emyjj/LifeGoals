@@ -1,0 +1,60 @@
+.container{
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    padding-top: 200px;
+    background: linear-gradient(to bottom, #f0f6f8, rgb(182, 229, 255));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+.navbar{
+    background-color: rgb(255, 255, 255) !important;
+}
+
+.navbar-dark .navbar-brand .text-primary {
+    color: rgb(100, 199, 253) !important;
+    font-size: 30px;
+}
+
+.navbar-dark .navbar-brand{
+    color: rgb(100, 199, 253) !important;
+    font-size: 30px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, 'Arial Narrow', Arial, sans-serif;
+}
+
+.home-content h1 {
+    font-size: 49px;
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.home-content p {
+    text-align: center;
+    font-size: 27px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.btn-login a, .btn-cadastro a {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #f0f6f8 !important;
+    color: rgb(0, 0, 0) !important;
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-cadastro:hover a, .btn-login:hover a {
+    background-color: rgb(182, 229, 255) !important;
+}
