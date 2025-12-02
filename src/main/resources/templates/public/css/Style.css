@@ -13,7 +13,7 @@ html, body {
 
 body {
     padding-top: 200px;
-    background: linear-gradient(to bottom, #f0f6f8, rgb(182, 229, 255));
+    background: linear-gradient(to bottom, #f0f6f8, rgb(182, 229, 255)) !important;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
@@ -287,4 +287,72 @@ body {
     border-radius: 8px;
     border-left: 5px solid #28a745;
     box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+/*side bar*/
+
+#toggle-sidebar {
+    display: none;
+}
+
+.sidebar-btn {
+    position: fixed;
+    top: 12px;
+    right: 15px;
+    font-size: 32px;
+    color: rgb(0, 0, 0);
+    z-index: 3000;
+    cursor: pointer;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -260px;
+    width: 260px;
+    height: 100%;
+    background: #f0f6f8;
+    padding: 30px 20px;
+    transition: 0.4s ease;
+    z-index: 2500;
+    color: rgb(0, 0, 0);
+}
+
+.sidebar ul{
+    padding: 0;
+    margin-top: 70px;
+}
+
+.sidebar li{
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    margin-bottom: 10px;
+    border-radius: 8px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+.sidebar li a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    display: block;
+    padding: 10px;
+}
+
+.sidebar li:hover {
+    background-color: rgb(182, 229, 255);
+    color: rgb(0, 0, 0);
+}
+
+#toggle-sidebar:checked + .sidebar-btn + .sidebar {
+    right: 0;
+}
+
+.content {
+    margin-left: 0;
+    transition: margin-left .4s;
+}
+
+#toggle-sidebar:checked + .sidebar-btn + .sidebar + .content {
+    margin-left: 260px;
 }
