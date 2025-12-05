@@ -9,17 +9,28 @@
     <link rel="stylesheet" href="Style.css">
 </head>
 <body>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow">
+<input type="checkbox" id="toggle-sidebar">
+    <label for="toggle-sidebar" class="sidebar-btn">&#9776;</label>
+
+    <div class="sidebar" id="sidebar">
+
+        <ul>
+            <li><a href="Login.html">Login</a></li>
+            <li><a href="Cadastro.html">Cadastro</a></li>
+        </ul>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow">
         <div class="container" id="container">
             <a class="navbar-brand fw-bold" href="#home">
                 Life<span class="text-primary" id="text-primary">Goals</span>
             </a>
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <i class='bx bx-menu fs-1 text-light'></i>
         </div>
     </nav>
-
     <section class="login-section" id="login-section">
 
         <h1>Login</h1>

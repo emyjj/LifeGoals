@@ -1,15 +1,12 @@
 import io.javalin.Javalin;
-import controllers.models.MetaController;
 
 public class App {
     public static void main(String[] args) {
 
         Javalin app = Javalin.create(config -> {
-            config.staticFiles.add("/public");
-        }).start(8080);
+            config.staticFiles.add("src/main/resources/public"); 
+        }).start(7000);
 
-        app.get("/index", MetaController::carregarIndex);
-
-        System.out.println("Servidor rodando em http://localhost:8080");
+        app.get("/", ctx -> ctx.result("Servidor rodando!"));
     }
 }

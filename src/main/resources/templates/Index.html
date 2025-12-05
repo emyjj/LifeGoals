@@ -38,26 +38,28 @@
     </nav>
 
     <main class="content">
-        <div class="header-page">
-            <h1>Gerenciamento de Metas</h1>
-            <button class="btn-add">Adicionar Meta</button>
-        </div>
+        <h1>Gerenciamento de Metas</h1>
 
         <h2 class="section-title" id="categorias">Categorias</h2>
         <div class="categories">
             <div class="category-card vermelho">Saúde</div>
-            <div class="category-card amarelo">Estudos</div>
             <div class="category-card vermelho">Trabalho</div>
-            <div class="category-card laranja">Finanças</div>
+            <div class="category-card amarelo">Estudos</div>
+            <div class="category-card amarelo">Relacionamentos</div>
             <div class="category-card amarelo">Fitness</div>
+            <div class="category-card laranja">Finanças</div>
             <div class="category-card verde">Lazer</div>
             <div class="category-card verde">Hobbies</div>
-            <div class="category-card azul">Casa</div>
-            <div class="category-card amarelo">Relacionamentos</div>
             <div class="category-card verde">Bem-estar</div>
+            <div class="category-card azul">Casa</div>
         </div>
 
         <h2 class="section-title" id="metas">Metas</h2>
+                <div class="header-page">
+            <button class="btn-add">
+                <a href="novaMeta.html" class="alo">+ Adicionar Meta</a>
+            </button>
+        </div>
         <div class="goals-list">
         <div th:each="m : ${metas}" class="card-meta">
             <h3 th:text="${m.titulo}"></h3>
