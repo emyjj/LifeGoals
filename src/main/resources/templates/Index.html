@@ -89,4 +89,27 @@
     </main>
 
 </body>
+    </main>
+
+    <script>
+        fetch("/metas")
+            .then(res => res.json())
+            .then(metas => {
+                const lista = document.querySelector(".goals-list");
+
+                metas.forEach(m => {
+                    lista.innerHTML += `
+                        <div class="card-meta">
+                            <h3>${m.titulo}</h3>
+                            <p>${m.descricao}</p>
+                            <span>${m.status}</span>
+                        </div>
+                    `;
+                });
+            });
+    </script>
+
+</body>
+</html>
+
 </html>
